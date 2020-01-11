@@ -13,7 +13,7 @@ This is the official code repository for 'TotallyNotBots'. This ML backed sentim
 
 ### Overview
 
-#### Problem Satement: NM396-ISRO
+#### Problem Statement: NM396-ISRO
 ##### Sentiment Analysis from text feedback: 
 Webportals like Bhuvan get vast amount of feedback from the users. To go through all the feedbacks can be a tedious job. Develop software to categorize opinions expressed in feedback forums. This can be utilized for feedback management system. The software must provide the classification of individual comments/reviews.
 
@@ -72,11 +72,16 @@ Domains:
 #### Usage
 
 1. Clone the repository
+
 ```git clone https://github.com/Aayusi/SihSrm```  
 
 2. Open folder 'webapps'
+
 ```cd webapps```
+
 ```pip install requirements.txt```
+
+```cd model```
 
 3. [Download 'model'](https://drive.google.com/uc?id=1DFx7JbfGkn61dUlGMG04lnTYl_iMCZhi&export=download)
 
