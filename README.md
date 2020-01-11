@@ -67,7 +67,7 @@ Domains:
 
 ![Nice](/images/SA.png)
 
-[Have a look at the Youtube video](https://youtu.be/v8Lo2EIrgHc)
+[Have a look at the Youtube video](https://www.youtube.com/watch?v=fJ7LuKQeErI&feature=youtu.be)
 
 #### Usage
 
