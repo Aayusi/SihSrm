@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<style>
+body {
+	background: hsl(120, 40%, 60%);
+	padding-top: 150px;
+	font: normal 18px Sniglet; color: white; text-align: center;
+}
+form {
+    margin: auto;
+    width: 35%;
+}
+
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+</style>
+<head>
+    <title>Review Sentiment Analysis</title>
+</head>
+<body>
+<form action="{{ url_for('main') }}" method="POST">
+    <fieldset>
+        <legend>Input values:</legend>
+        review:
+        <input name="review" type="text" required>
+        <br>
+        <br>
+        <input type="submit">
+    </fieldset>
+</form>
+<br>
+<div class="result" align="center">
+    {% if result == 0 or result == 1 %}
+        {% for variable, value in original_input.items() %}
+            <b>{{ variable }}</b> : {{ value }}
+        {% endfor %}
+        <br>
+        <br> Predicted review:
+	{% if result == 0 %}
+          <p style="font-size:20px">Negative</p>
+	{% endif %}
+	{% if result == 1 %}
+          <p style="font-size:20px">Positive</p>
+	{% endif %}
+    {% endif %}
+</div>
+</body>
+</html>
